@@ -1,0 +1,67 @@
+==> INDEX.JS
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './component/Header';
+import Body from './component/Body';
+import Footer from './component/Footer';
+
+
+ReactDOM.render(
+  <>
+<center>
+  <Header/>
+  <Body/>
+  <Footer/>
+</center>
+  </>
+,document.getElementById('root'));
+
+HEADER.JS
+
+import React from "react";
+
+function Top(){
+   
+    return(
+        <h1>This Is Header Part Of The Webpage...</h1>,
+
+         <p>
+            “The best view comes after the hardest climb.” 
+             “Every mountain top is within reach if you just keep climbing.” 
+             “Every man should pull a boat over a mountain once in his life.” 
+             “We are now in the mountains and they are in us, kindling enthusiasm, 
+             making every nerve quiver, filling every pore and cell of us.”
+        </p>
+    );
+    
+}
+ 
+  export default Top
+
+==> BODY.JS
+
+import React from "react";
+
+function Middle(){
+
+    return(
+      <img src="m.jpg" alt="This Picture Can't Be Load..." width="100%" height="750px"></img>
+    );
+}
+
+export default Middle
+
+==> FOOTER.JS
+
+import React from "react";
+
+function Bottom(){
+
+ return (  
+     <h2>This Is The Footer Part Of The Webpage...</h2>
+ )
+
+};
+
+export default Bottom();
